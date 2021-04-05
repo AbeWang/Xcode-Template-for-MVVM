@@ -1,2 +1,2 @@
-# Xcode-Template-for-MVVM
+# Xcode Template for MVVM
 Custom template for MVVM project architecture.
