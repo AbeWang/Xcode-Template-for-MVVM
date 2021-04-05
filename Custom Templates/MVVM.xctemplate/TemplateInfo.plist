@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Module:</string>
+			<key>Description</key>
+			<string>The name of the MVVM Module</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>Module</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>viewType</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>View Type:</string>
+			<key>Description</key>
+			<string>The type of view to create</string>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Default</key>
+			<string>ViewController</string>
+			<key>Values</key>
+			<array>
+				<string>ViewController</string>
+				<string>TableViewController</string>
+				<string>CollectionViewController</string>
+				<string>TableViewCell</string>
+				<string>CollectionViewCell</string>
+			</array>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>createViewModel</string>
+			<key>Name</key>
+			<string>The ViewModel is created by the View</string>
+			<key>Description</key>
+			<string>The ViewModel is created by the View</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>true</string>
+			<key>NotPersisted</key>
+			<false/>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>viewType</key>
+				<array>
+					<string>ViewController</string>
+					<string>TableViewController</string>
+					<string>CollectionViewController</string>
+					<string>TableViewCell</string>
+					<string>CollectionViewCell</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
